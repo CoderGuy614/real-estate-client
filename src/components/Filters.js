@@ -23,13 +23,15 @@ const Filters = ({
     return (
       <Form.Group>
         <Form.Label className="d-none d-md-block">
-          <i className="fas fa-bed fa-2x filter-icon"></i>
+          <i className="fas fa-bed filter-icon"></i>
         </Form.Label>
 
         <Form.Control
           disabled={showFavorites}
           as="select"
           onChange={bedroomSelect}
+          size="sm"
+          style={{ width: "auto" }}
         >
           {[...Array(6)].map((choice, i) => {
             return (
@@ -47,14 +49,15 @@ const Filters = ({
     return (
       <Form.Group>
         <Form.Label className="d-none d-md-block">
-          <i className="fas fa-home fa-2x filter-icon"></i>
+          <i className="fas fa-home filter-icon"></i>
         </Form.Label>
 
         <Form.Control
           disabled={showFavorites}
           as="select"
           onChange={typeSelect}
-          className="d-flex"
+          size="sm"
+          style={{ width: "auto" }}
         >
           <option value="all">All Types</option>
           {categories.map((category, i) => {
@@ -73,9 +76,15 @@ const Filters = ({
     return (
       <Form.Group>
         <Form.Label className="d-none d-md-block">
-          <i className="fas fa-dollar-sign fa-2x filter-icon"></i>
+          <i className="fas fa-dollar-sign filter-icon"></i>
         </Form.Label>
-        <Form.Control disabled={showFavorites} as="select" onChange={maxPrice}>
+        <Form.Control
+          size="sm"
+          disabled={showFavorites}
+          as="select"
+          onChange={maxPrice}
+          style={{ width: "auto" }}
+        >
           <option value={1000000000}>Max. Price</option>
           <option value={1000000000}>$1,000,000+</option>
           <option value={750000}>$750,000</option>

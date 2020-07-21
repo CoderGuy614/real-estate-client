@@ -6,7 +6,7 @@ import Filters from "./Filters";
 import AlertComponent from "./Alert";
 import { getProperties, getCategories } from "./apiCore";
 
-import { Row, Col, Container, Button } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 
 import { connect } from "react-redux";
 
@@ -117,7 +117,7 @@ const Houses = ({
       </Row>
 
       <Row>
-        <Col xs={12} md={8}>
+        <Col xs={12} md={8} className="px-0">
           <AlertComponent />
           <div className="grid-container">
             <div className="grid-item">

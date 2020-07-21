@@ -33,7 +33,7 @@ const Thumbnail = ({ property, houseHover }) => {
           ${Number(property.Price).toLocaleString()}
         </span>
         <span className="listed-date">
-          Listed: {moment(property.created_at).fromNow()}
+          Listed: {moment(property.Listed).fromNow()}
         </span>
       </div>
     </Link>

@@ -246,8 +246,8 @@ form .rating {
 
 .filter-button {
   height: 43px;
-
   width: 75px;
+  margin: 5px;
 }
 
 .show-filters-button {
@@ -265,6 +265,7 @@ form .rating {
   height: 45px;
   text-transform: uppercase;
   width: 75px;
+  margin: 5px;
 }
 
 .filter-row-container {
@@ -272,14 +273,16 @@ form .rating {
 }
 
 .navbar {
-  height: 75px;
+  height: 50px;
 }
 
 .navbar-brand {
   float: left;
+  margin-top: 10px;
 }
 
 .navbar-text {
+  margin-top: 10px;
 }
 
 .contact-button {
@@ -353,4 +356,8 @@ form .rating {
 
 .social-icon {
   margin: 0px 5px;
+}
+
+.alert {
+  margin-top: 10px;
 }
