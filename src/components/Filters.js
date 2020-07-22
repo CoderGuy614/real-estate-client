@@ -178,8 +178,8 @@ const Filters = ({
   return (
     <>
       <Form inline className="filter-form">
-        <Form.Row className="d-xs-block d-sm-none">{mobileFilters()}</Form.Row>
-        <Form.Row className="d-sm-inline-flex d-none filter-row-container">
+        <Form.Row className="d-xs-block d-md-none">{mobileFilters()}</Form.Row>
+        <Form.Row className="d-md-inline-flex d-none filter-row-container">
           {largeFilters()}
         </Form.Row>
       </Form>
