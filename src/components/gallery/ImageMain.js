@@ -6,7 +6,7 @@ const ImageMain = ({ photos, handleOpen }) => {
       className="gallery-main-image"
       onClick={handleOpen}
       style={{
-        backgroundImage: `url('${process.env.REACT_APP_API}${photos[0].url}')`,
+        backgroundImage: `url('${photos[0]}')`,
       }}
     ></div>
   );

@@ -10,7 +10,7 @@ const Previews = ({ photos, handleOpen }) => {
             onClick={() => handleOpen()}
             key={i}
             style={{
-              backgroundImage: `url('${process.env.REACT_APP_API}${image.url}')`,
+              backgroundImage: `url('${image}')`,
             }}
           ></div>
         ))}

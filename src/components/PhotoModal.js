@@ -14,11 +14,7 @@ function PhotoModal({ isOpen, handleClose, photos }) {
           <Carousel>
             {photos.map((photo) => (
               <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={`${process.env.REACT_APP_API}${photo.url}`}
-                  alt=""
-                />
+                <img className="d-block w-100" src={`${photo}`} alt="" />
               </Carousel.Item>
             ))}
           </Carousel>
