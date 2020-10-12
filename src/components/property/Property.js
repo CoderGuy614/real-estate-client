@@ -21,6 +21,7 @@ import "../../styles/users.css";
 import "../../styles/gallery.css";
 
 const Property = (props) => {
+  // Confirm maps API Settings
   const [property, setProperty] = useState({ category: {}, realtor: {} });
   const [map, setMap] = useState({
     key: {
