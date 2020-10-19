@@ -9,9 +9,9 @@ const keepAlive = (() => {
     const cronJob = cron.schedule('0 */25 * * * *', () => {
   
       getCategories()
-        .then(res => console.log(`response-ok: ${res.ok}, status: ${res.status}`)
+        .then(res => console.log(`response-ok: ${res.ok}, status: ${res.status}`))
         .catch(err => console.log(err) )
-        )
+        
     });
   
     cronJob.start();
