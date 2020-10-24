@@ -5,12 +5,11 @@ import Houses from "./Houses";
 import Property from "./property/Property";
 import Contact from "./Contact";
 import Nav from "./Nav";
-import keepAlive from '../utils/keepAlive'
 import { Provider } from "react-redux";
 import { store, persistor } from "../redux/store";
 
 const App = () => {
-  {keepAlive()}
+
   return (
     <Provider store={store}>
       <BrowserRouter>
